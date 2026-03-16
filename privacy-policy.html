@@ -400,6 +400,114 @@
 		});
 	</script>
 	<script>
+		// --- Page Transition Logic ---
+		document.addEventListener("DOMContentLoaded", () => {
+			const pageContent = document.getElementById("page-content");
+			
+			// Create the overlay element dynamically
+			const overlay = document.createElement("div");
+			overlay.className = "transition-overlay";
+			document.body.appendChild(overlay);
+
+			// Check if this page load was from an internal transition
+			const isInternalNavigation = sessionStorage.getItem('isInternalNavigation');
+			sessionStorage.removeItem('isInternalNavigation');
+
+			if (pageContent) {
+				if (isInternalNavigation) {
+					window.scrollTo(0, 0);
+					if (window.lenis) {
+						window.lenis.scrollTo(0, { immediate: true });
+					}
+					requestAnimationFrame(() => {
+						pageContent.classList.add("page-transition-enter");
+						overlay.classList.add("is-entering");
+					});
+
+					// Scroll to hash section with 100px top offset after transition
+					const scrollToHash = sessionStorage.getItem('scrollToHash');
+					sessionStorage.removeItem('scrollToHash');
+					const targetEl = scrollToHash ? document.querySelector(scrollToHash) : null;
+					if (targetEl) {
+						setTimeout(() => {
+							const offset = 100;
+							if (window.lenis) {
+								window.lenis.scrollTo(targetEl, { offset: -offset, duration: 1.2 });
+							} else {
+								const y = targetEl.getBoundingClientRect().top + window.scrollY - offset;
+								window.scrollTo({ top: y, behavior: 'smooth' });
+							}
+						}, 700);
+					}
+				} else {
+					pageContent.style.opacity = 1;
+
+					// Handle direct URL hash on first load (e.g. index.html#rental-terms from browser)
+					if (window.location.hash) {
+						const targetEl = document.querySelector(window.location.hash);
+						if (targetEl) {
+							setTimeout(() => {
+								const offset = 100;
+								const y = targetEl.getBoundingClientRect().top + window.scrollY - offset;
+								if (window.lenis) {
+									window.lenis.scrollTo(y, { duration: 1.2 });
+								} else {
+									window.scrollTo({ top: y, behavior: 'smooth' });
+								}
+							}, 100);
+						}
+					}
+				}
+			}
+
+			// Handle same-page hash links with 100px offset
+			document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+				anchor.addEventListener('click', function (e) {
+					const hash = this.getAttribute('href');
+					if (!hash || hash === '#') return;
+					const targetEl = document.querySelector(hash);
+					if (!targetEl) return;
+					e.preventDefault();
+					const offset = 100;
+					const y = targetEl.getBoundingClientRect().top + window.scrollY - offset;
+					if (window.lenis) {
+						window.lenis.scrollTo(y, { duration: 1.2 });
+					} else {
+						window.scrollTo({ top: y, behavior: 'smooth' });
+					}
+				});
+			});
+
+			// Intercept clicks on local links
+			document.querySelectorAll('a').forEach(anchor => {
+				anchor.addEventListener('click', function (e) {
+					const targetUrl = this.getAttribute('href');
+					const isTargetBlank = this.getAttribute('target') === '_blank';
+					const isHashLink = targetUrl && targetUrl.startsWith('#');
+					const isExternal = this.host !== window.location.host;
+
+					if (!targetUrl || isTargetBlank || isHashLink || isExternal || targetUrl.startsWith('javascript:') || targetUrl.startsWith('mailto:') || targetUrl.startsWith('tel:')) return;
+
+					e.preventDefault();
+					const destination = this.href;
+
+					if (pageContent) {
+						pageContent.classList.remove("page-transition-enter");
+						pageContent.classList.add("page-transition-exit");
+					}
+					overlay.classList.remove("is-entering");
+					overlay.classList.add("is-exiting");
+
+					sessionStorage.setItem('isInternalNavigation', 'true');
+
+					setTimeout(() => {
+						window.location.href = destination;
+					}, 600); 
+				});
+			});
+		});
+	</script>
+	<script>
 		// Initialize Lenis
 		window.lenis = new Lenis({
 			autoRaf: true,
