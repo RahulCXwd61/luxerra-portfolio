@@ -1106,6 +1106,22 @@
 		});
 	</script>
 	<script>
+		// Fix for browser back/forward button (bfcache restore):
+		// When browser restores cached page, DOMContentLoaded does NOT re-fire.
+		// The page-transition-exit class stays stuck making the page invisible.
+		// pageshow with event.persisted=true catches this and resets the page.
+		window.addEventListener('pageshow', function(event) {
+			if (event.persisted) {
+				var pageContent = document.getElementById("page-content");
+				if (pageContent) {
+					pageContent.classList.remove("page-transition-exit");
+					pageContent.classList.add("page-transition-enter");
+					pageContent.style.opacity = '';
+				}
+			}
+		});
+	</script>
+	<script>
 		// --- Testimonials Slider ---
 		$('.testimonials-slider').slick({
 			dots: true,
