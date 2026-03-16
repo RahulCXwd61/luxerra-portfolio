@@ -996,7 +996,8 @@
 		document.querySelectorAll('.mobile-link').forEach(link => {
 			link.addEventListener('click', () => closeNavbar());
 		});
-
+	</script>
+	<script>
 		// --- Page Transition Logic ---
 		document.addEventListener("DOMContentLoaded", () => {
 			const pageContent = document.getElementById("page-content");
@@ -1102,6 +1103,32 @@
 					}, 600); 
 				});
 			});
+		});
+	</script>
+	<script>
+		$('.testimonials-slider').slick({
+		  dots: true,
+		  infinite: false,
+		  speed: 500,
+		  arrows:false,
+		  slidesToShow: 3,
+		  slidesToScroll: 2,
+		  responsive: [
+		    {
+		      breakpoint: 600,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+		  ]
 		});
 	</script>
 
