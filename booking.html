@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Book Your Luxury Car</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carouse
+	l/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+
+	<!-- ============================== Header Section ============================== -->
+
+	<header class="lg:pt-[20px] lg:px-[20px] xl:px-[40px] lg:pb-[15px] p-[20px] fixed left-0 right-0 top-0 m-auto z-[11111111]">
+		<!-- Desktop Header Layout (lg+) -->
+		<div class="absolute left-0 right-0 h-[125px] z-[-1] w-full top-0 brightness-[0.85] bg-[linear-gradient(to_bottom,rgba(8,8,8,1)_0%,rgba(8,8,8,0.95)_3%,rgba(8,8,8,0.88)_6%,rgba(8,8,8,0.79)_9%,rgba(8,8,8,0.69)_12%,rgba(8,8,8,0.59)_15%,rgba(8,8,8,0.49)_18%,rgba(8,8,8,0.39)_21%,rgba(8,8,8,0.31)_24%,rgba(8,8,8,0.24)_27%,rgba(8,8,8,0.18)_30%,rgba(8,8,8,0.13)_34%,rgba(8,8,8,0.09)_38%,rgba(8,8,8,0.06)_43%,rgba(8,8,8,0.04)_48%,rgba(8,8,8,0.02)_54%,rgba(8,8,8,0.01)_60%,rgba(8,8,8,0.005)_70%,rgba(8,8,8,0.002)_80%,rgba(8,8,8,0.001)_90%,rgba(8,8,8,0)_100%)]"></div>
+		<div class="container mx-auto hidden lg:block">
+			<div class="flex justify-between items-center">
+				<div class="flex-1">
+					<a href="index.html" class="flex items-center gap-2 w-fit">
+						<img src="assets/images/logo.svg" alt="Luxerra" class="w-6 h-6">
+						<span class="text-white text-base font-medium tracking-[-.01em]">Luxerra</span>
+					</a>
+				</div>
+				
+				<!-- Desktop Navigation -->
+				<ul class="flex items-center gap-[50px]">
+					<li>
+						<a href="cars.html"
+							class="relative inline-block text-base font-normal leading-[25px] text-[var(--light-text)] duration-300 ease-out pb-1
+									hover:text-white
+									after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-full after:bg-white after:scale-x-0 after:origin-right after:transition-transform after:duration-300
+									hover:after:scale-x-100 hover:after:origin-left">
+							Cars
+						</a>
+					</li>
+					<li>
+						<a href="index.html#rental-terms"
+							class="relative inline-block text-base font-normal leading-[25px] text-[var(--light-text)] duration-300 ease-out pb-1
+									hover:text-white
+									after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-full after:bg-white after:scale-x-0 after:origin-right after:transition-transform after:duration-300
+									hover:after:scale-x-100 hover:after:origin-left">
+							Rental Terms
+						</a>
+					</li>
+					<li>
+						<a href="News.html"
+							class="relative inline-block text-base font-normal leading-[25px] text-[var(--light-text)] duration-300 ease-out pb-1
+									hover:text-white
+									after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-full after:bg-white after:scale-x-0 after:origin-right after:transition-transform after:duration-300
+									hover:after:scale-x-100 hover:after:origin-left">
+							News
+						</a>
+					</li>
+				</ul>
+
+				<div class="flex items-center gap-5 flex-1 justify-end">
+					<!-- Social Icons (Desktop Only) -->
+					<div class="flex items-center gap-[14px]">
+						<a href="#">
+							<img src="assets/images/instagram.svg" alt="Instagram" class="w-[16px] h-[16px] opacity-[0.7] duration-300 ease-out
+							hover:opacity-[1]">
+						</a>
+						<a href="#">
+							<img src="assets/images/whatsapp.svg" alt="Whatsapp" class="w-[16px] h-[16px] opacity-[0.7] duration-300 ease-out
+							hover:opacity-[1]">
+						</a>
+						<a href="#">
+							<img src="assets/images/phone.svg" alt="Phone" class="w-[16px] h-[16px] opacity-[0.7] duration-300 ease-out
+							hover:opacity-[1]">
+						</a>
+					</div>
+					
+					<!-- Book Now Button -->
+					<div class="bg-white pt-[10px] pb-[10px] px-[15px] md:px-[20px] rounded-[50px] duration-300 ease-out overflow-hidden h-[45px] md:h-[49px] w-fit min-w-[90px] md:min-w-[101px] z-10 relative group">
+						<a href="booking.html"
+							class="text-[13px] md:text-[14px] font-normal md:leading-[30px] text-[#080808] block absolute left-0 right-0 top-0 bottom-0 m-auto flex items-center justify-center transition-all duration-300 text-center
+									group-hover:-translate-y-8">
+							Book Now
+						</a>
+						<a href="booking.html"
+							class="text-[13px] md:text-[14px] font-normal md:leading-[30px] text-[#080808] block absolute left-0 right-0 top-0 bottom-0 m-auto flex items-center justify-center translate-y-8 transition-all duration-300 text-center
+									group-hover:translate-y-0">
+							Book Now
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Mobile Navbar Pill (< 1024px) -->
+		<div id="mobile-navbar-pill" class="lg:hidden bg-[var(--dark-bg)] rounded-[32px] border border-[#1a1a1a] shadow-2xl overflow-hidden transition-all duration-500 ease-in-out">
+			<!-- Top Bar -->
+			<div class="flex justify-between items-center p-[10px_20px] transition-all duration-500 ease-in-out">
+				<a href="index.html" class="flex items-center gap-2">
+					<img src="assets/images/logo.svg" alt="Luxerra" class="w-6 h-6">
+					<span class="text-white text-base font-medium tracking-[-.01em]">Luxerra</span>
+				</a>
+				<!-- Toggle Button -->
+				<button id="hamburger-btn" class="flex flex-col gap-[2px] p-[10px_0] cursor-pointer z-[11112] focus:outline-none w-[20px] h-[40px] items-center justify-center relative">
+					<span class="hamburger-line hamburger-line-1 w-full h-[2px] bg-white rounded-full absolute transition-all duration-300 transform -translate-y-[3.5px]"></span>
+					<span class="hamburger-line hamburger-line-2 w-full h-[2px] bg-white rounded-full absolute transition-all duration-300 transform translate-y-[3.5px]"></span>
+				</button>
+			</div>
+
+			<!-- Dropdown Content -->
+			<div class="grid grid-rows-[0fr] transition-all duration-500 ease-in-out">
+				<div class="overflow-hidden">
+					<div class="p-[10px_20px_20px]">
+						<ul class="flex flex-col gap-[20px] mb-7">
+							<li><a href="cars.html" class="text-[#cacaca] text-[16px] transition-colors hover:text-[var(--light-text)] block">Cars</a></li>
+							<li><a href="#rental-terms" class="text-[#cacaca] text-[16px] mobile-link transition-colors hover:text-[var(--light-text)] block">Rental Terms</a></li>
+							<li><a href="news.html" class="text-[#cacaca] text-[16px] transition-colors hover:text-[var(--light-text)] block">News</a></li>
+						</ul>
+						
+						<div class="flex items-center gap-5 flex-1">
+							<div class="bg-white pt-[10px] pb-[10px] px-[15px] md:px-[20px] rounded-[50px] duration-300 ease-out overflow-hidden h-[45px] md:h-[49px] w-fit min-w-[90px] md:min-w-[101px] z-10 relative group">
+								<a href="booking.html"
+									class="text-[13px] md:text-[14px] font-normal md:leading-[30px] text-[#080808] block absolute left-0 right-0 top-0 bottom-0 m-auto flex items-center justify-center transition-all duration-300 text-center
+											group-hover:-translate-y-8">
+									Book Now
+								</a>
+								<a href="booking.html"
+									class="text-[13px] md:text-[14px] font-normal md:leading-[30px] text-[#080808] block absolute left-0 right-0 top-0 bottom-0 m-auto flex items-center justify-center translate-y-8 transition-all duration-300 text-center
+											group-hover:translate-y-0">
+									Book Now
+								</a>
+							</div>
+							<div class="flex items-center">
+								<div class="flex items-center gap-[20px]">
+									<a href="#">
+										<img src="assets/images/instagram.svg" alt="Instagram" class="w-[16px] h-[16px] opacity-[0.7] duration-300 ease-out
+										hover:opacity-[1]">
+									</a>
+									<a href="#">
+										<img src="assets/images/whatsapp.svg" alt="Whatsapp" class="w-[16px] h-[16px] opacity-[0.7] duration-300 ease-out
+										hover:opacity-[1]">
+									</a>
+									<a href="#">
+										<img src="assets/images/phone.svg" alt="Phone" class="w-[16px] h-[16px] opacity-[0.7] duration-300 ease-out
+										hover:opacity-[1]">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- ============================== Header Section End ============================== -->
+	
+	<main id="page-content" class="page-transition-wrapper">
+
+		<!-- ============================== Book Section ============================== -->
+
+		<section class="p-[150px_25px_60px] smp:[150px_25px_40px] lg:p-[150px_40px_80px]">
+			<div class="container">
+				<h2 class="text-white text-[46px] lg:text-[68px] font-medium lg:text-center lg:m-auto leading-[1.15] tracking-[-.02em] lg:w-fit w-full">Book Your Premium <br class="sm:block hidden">Car Today</h2>
+				<div class="lg:grid flex items-center gap-[20px] content-center lg:justify-items-center lg:justify-center lg:text-center m-[40px_auto_30px]">
+					<img src="assets/images/michael-carter.avif" alt="" class="w-[50px] h-[50px] object-cover rounded-[50%] select-none">
+					<div>
+						<h4 class="text-white text-[16px] max-w-[700px] leading-[1.2] m-[0_0_8px] font-medium">Michael Carter</h4>
+						<p class="text-[var(--light-gray)] text-[16px] max-w-[700px] leading-[1.2]">Your Personal Rental Assistant</p>
+					</div>
+				</div>
+				<div class="bg-white pt-[10px] pb-[10px] pl-[20px] pr-[20px] rounded-[50px] duration-300 ease-out overflow-hidden h-[49px] w-[111px] z-10 relative group mt-[40px] lg:m-[30px_auto_0]">
+					<a href="tel:9999999999" class="text-[14px] font-normal leading-[30px] text-[#080808] block absolute left-0 right-0 top-0 bottom-0 m-auto pt-[10px] pb-[10px] pl-[16px] pr-[16px] transition-all duration-300 text-center
+								group-hover:-translate-y-8">
+						Call Us Now
+					</a>
+					<a href="tel:9999999999" class="text-[14px] font-normal leading-[30px] text-[#080808] block absolute left-0 right-0 top-0 bottom-0 m-auto translate-y-8 pt-[10px] pb-[10px] pl-[16px] pr-[16px] transition-all duration-300 text-center
+								group-hover:translate-y-0">
+						Call Us Now
+					</a>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- ============================== Book Section End ============================== -->
+
+		<!-- ============================== Form Section ============================== -->
+
+		<section class="p-[0_25px_100px] lg:p-[0_40px_100px]">
+			<div class="container relative p-[0px] sm:p-[60px] sm:block flex flex-col-reverse gap-[10px]">
+				<div class="sm:absolute left-0 right-0 h-full top-0 bottom-0 m-auto w-full aspect-[1.02941] sm:aspect-0 rounded-[30px] overflow-hidden">
+					<img src="assets/images/form-background.avif" alt="" class="w-full h-full object-cover">
+				</div>
+				<div class="grid gap-[25px] relative z-10 max-w-full w-full md:max-w-[560px] sm:p-[40px] p-[30px] bg-[var(--dark-bg)] m-[auto] rounded-[30px]">
+				  	<label>
+				    	<p class="text-white text-[16px] leading-[1.2] mb-[12px] font-medium">Full Name</p>
+					    <input type="text" placeholder="Your Full Name"
+					      class="p-[18px_25px] rounded-[50px] w-full text-[16px] text-white bg-[var(--dark-gray)] font-features-['none']
+					      focus:outline-none focus:ring-1 focus:ring-[#2a2a2a]"
+					      required>
+				  	</label>
+				  	<label>
+				    	<p class="text-white text-[16px] leading-[1.2] mb-[12px] font-medium">Phone Number</p>
+				    	<input type="text" placeholder="Your Phone Number"
+					      class="p-[18px_25px] rounded-[50px] w-full text-[16px] text-white bg-[var(--dark-gray)] font-features-['none']
+					      focus:outline-none focus:ring-1 focus:ring-[#2a2a2a]"
+					      required>
+				  	</label>
+				  	<label>
+				    	<p class="text-white text-[16px] leading-[1.2] mb-[12px] font-medium">Choose Your Vehicle</p>
+					    <div class="bg-[var(--dark-gray)] rounded-[50px]">
+						    <select class="p-[18px_25px] w-full text-[16px] text-white bg-transparent appearance-none
+						        bg-(image:--down_arrow) bg-size-[10px] bg-[94%_50%] bg-no-repeat font-features-['none']
+						        focus:outline-none focus:ring-1 focus:ring-[#2a2a2a] rounded-[50px]" required>
+						        <option class="bg-[var(--dark-gray)]">Porsche 911 GT3 RS</option>
+						        <option class="bg-[var(--dark-gray)]">Mercedes-AMG GT</option>
+						        <option class="bg-[var(--dark-gray)]">Audi R8</option>
+						        <option class="bg-[var(--dark-gray)]">Aston Martin Vantage</option>
+						        <option class="bg-[var(--dark-gray)]">McLaren 650S</option>
+						        <option class="bg-[var(--dark-gray)]">Chevrolet Corvette</option>
+						        <option class="bg-[var(--dark-gray)]">Lamborghini Huracán</option>
+						        <option class="bg-[var(--dark-gray)]">Ferrari 488 GTB</option>
+					      	</select>
+					    </div>
+				  	</label>
+				  	<div class="grid sm:grid-cols-2 sm:gap-[15px] gap-[25px]">
+					    <label>
+					      	<p class="text-white text-[16px] leading-[1.2] mb-[12px] font-medium">Pick-up Date</p>
+					      	<div class="bg-[var(--dark-gray)] rounded-[50px]">
+						        <input type="date"
+						          class="p-[18px_25px] w-full text-[16px] text-[#9f9f9f] bg-transparent appearance-none
+						          bg-(image:--calendar_icon) bg-size-[15px] bg-[88%_50%] bg-no-repeat font-features-['none']
+						          focus:outline-none focus:ring-1 focus:ring-[#2a2a2a] rounded-[50px]"
+						          required>
+					      	</div>
+					    </label>
+					    <label>
+					      	<p class="text-white text-[16px] leading-[1.2] mb-[12px] font-medium">Drop-off Date</p>
+						      <div class="bg-[var(--dark-gray)] rounded-[50px]">
+						        <input type="date"
+						          class="p-[18px_25px] w-full text-[16px] text-[#9f9f9f] bg-transparent appearance-none
+						          bg-(image:--calendar_icon) bg-size-[15px] bg-[88%_50%] bg-no-repeat font-features-['none']
+						          focus:outline-none focus:ring-1 focus:ring-[#2a2a2a] rounded-[50px]"
+						          required>
+						      </div>
+					    </label>
+				  </div>
+				  <a href="booking.html"
+				    class="text-[16px] font-normal leading-[30px] text-[#080808] block p-[16px] text-center bg-white rounded-[50px] w-full my-[5px]">
+				    Book Now
+				  </a>
+				  <p class="text-[var(--gray)] text-[14px] leading-[1.7]">
+				    By clicking “Book Now”, you agree to our
+				    <a href="#" class="font-medium text-white">Privacy Policy.</a>
+				  </p>
+
+				</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============================== Form Section End ============================== -->
+
+		<section class="p-[0px_20px_70px] sm:p-[0px_20px_0px] lg:p-[30px_40px_50px] bg-[#080808]">
+			<div class="container mx-auto">
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-8">
+					<!-- FAQ Left Column -->
+					<div class="w-full">
+						<h2 class="text-white lg:text-[54px] md:text-[34px] text-[34px] text-left font-medium leading-[1.35] tracking-[-.02em]">Frequently Asked Questions</h2>
+					</div>
+					
+					<!-- FAQ Right Column -->
+					<div class="w-full">
+						<div class="flex flex-col">
+							<!-- FAQ Item 1 -->
+							<div class="faq-item border-b-[var(--border)] border-b-[1px] overflow-hidden transition-all duration-500 cursor-pointer">
+								<button class="faq-btn w-full flex justify-between items-center py-7 text-left group cursor-pointer lg:py-8">
+									<span class="text-white text-[18px] font-medium w-[calc(100%_-_30px)] leading-[1.2] pr-8 transition-colors group-hover:text-[var(--light-text)]">What are the terms and conditions for using the car?</span>
+									<div class="faq-icon-wrapper relative w-[22px] h-[22px] flex items-center justify-center">
+										<span class="faq-icon-x absolute w-full h-[2px] bg-white rounded-full transition-transform duration-300"></span>
+										<span class="faq-icon-v absolute w-[2px] h-full bg-white rounded-full transition-transform duration-300"></span>
+									</div>
+								</button>
+								<div class="faq-panel max-h-0 opacity-0 transition-all duration-500 ease-in-out">
+									<p class="text-[var(--gray)] text-[16px] md:text-[18px] leading-[1.6] pb-8 max-w-[650px]">Our vehicles must be used in accordance with all local traffic laws and may only be driven by registered drivers listed in the rental agreement. The vehicle must not be used for racing, off-road driving, or any illegal activities. A valid driver’s license and security deposit are required.</p>
+								</div>
+							</div>
+
+							<!-- FAQ Item 2 -->
+							<div class="faq-item border-b-[var(--border)] border-b-[1px] overflow-hidden transition-all duration-500 cursor-pointer">
+								<button class="faq-btn w-full flex justify-between items-center py-7 text-left group cursor-pointer lg:py-8">
+									<span class="text-white text-[18px] font-medium w-[calc(100%_-_30px)]  leading-[1.2] pr-8 transition-colors group-hover:text-[var(--light-text)]">Can I drive the car outside the city?</span>
+									<div class="faq-icon-wrapper relative w-[22px] h-[22px] flex items-center justify-center">
+										<span class="faq-icon-x absolute w-full h-[2px] bg-white rounded-full transition-transform duration-300"></span>
+										<span class="faq-icon-v absolute w-[2px] h-full bg-white rounded-full transition-transform duration-300"></span>
+									</div>
+								</button>
+								<div class="faq-panel max-h-0 opacity-0 transition-all duration-500 ease-in-out">
+									<p class="text-[var(--gray)] text-[16px] md:text-[18px] leading-[1.6] pb-8 max-w-[650px]">Yes, you may drive the vehicle outside the city limits, provided that the route is within the permitted territory indicated in your rental contract. Please inform us in advance so we can note it in your agreement.</p>
+								</div>
+							</div>
+
+							<!-- FAQ Item 3 -->
+							<div class="faq-item border-b-[var(--border)] border-b-[1px] overflow-hidden transition-all duration-500 cursor-pointer">
+								<button class="faq-btn w-full flex justify-between items-center py-7 text-left group cursor-pointer lg:py-8">
+									<span class="text-white text-[18px] font-medium leading-[1.2] w-[calc(100%_-_30px)]  pr-8 transition-colors group-hover:text-[var(--light-text)]">What is your fuel policy?</span>
+									<div class="faq-icon-wrapper relative w-[22px] h-[22px] flex items-center justify-center">
+										<span class="faq-icon-x absolute w-full h-[2px] bg-white rounded-full transition-transform duration-300"></span>
+										<span class="faq-icon-v absolute w-[2px] h-full bg-white rounded-full transition-transform duration-300"></span>
+									</div>
+								</button>
+								<div class="faq-panel max-h-0 opacity-0 transition-all duration-500 ease-in-out">
+									<p class="text-[var(--gray)] text-[16px] md:text-[18px] leading-[1.6] pb-8 max-w-[650px]">The vehicle is provided with a full tank and must be returned with a full tank. If the car is returned with less fuel, the missing amount will be charged according to our current fuel rates.</p>
+								</div>
+							</div>
+
+							<!-- FAQ Item 4 -->
+							<div class="faq-item border-b-[var(--border)] border-b-[1px] overflow-hidden transition-all duration-500 cursor-pointer">
+								<button class="faq-btn w-full flex justify-between items-center py-7 text-left group cursor-pointer lg:py-8">
+									<span class="text-white text-[18px] font-medium leading-[1.2] w-[calc(100%_-_30px)]  pr-8 transition-colors group-hover:text-[var(--light-text)]">Can the car be decorated for the wedding?</span>
+									<div class="faq-icon-wrapper relative w-[22px] h-[22px] flex items-center justify-center">
+										<span class="faq-icon-x absolute w-full h-[2px] bg-white rounded-full transition-transform duration-300"></span>
+										<span class="faq-icon-v absolute w-[2px] h-full bg-white rounded-full transition-transform duration-300"></span>
+									</div>
+								</button>
+								<div class="faq-panel max-h-0 opacity-0 transition-all duration-500 ease-in-out">
+									<p class="text-[var(--gray)] text-[16px] md:text-[18px] leading-[1.6] pb-8 max-w-[650px]">Absolutely. We allow wedding decorations as long as they do not damage the vehicle. Please coordinate the decoration details with us in advance so we can approve the materials and installation method.</p>
+								</div>
+							</div>
+
+							<!-- FAQ Item 5 -->
+							<div class="faq-item border-b-[var(--border)] border-b-[1px] overflow-hidden transition-all duration-500 cursor-pointer">
+								<button class="faq-btn w-full flex justify-between items-center py-7 text-left group cursor-pointer lg:py-8">
+									<span class="text-white text-[18px] font-medium leading-[1.2] w-[calc(100%_-_30px)]  pr-8 transition-colors group-hover:text-[var(--light-text)]">Do you offer a driver service?</span>
+									<div class="faq-icon-wrapper relative w-[22px] h-[22px] flex items-center justify-center">
+										<span class="faq-icon-x absolute w-full h-[2px] bg-white rounded-full transition-transform duration-300"></span>
+										<span class="faq-icon-v absolute w-[2px] h-full bg-white rounded-full transition-transform duration-300"></span>
+									</div>
+								</button>
+								<div class="faq-panel max-h-0 opacity-0 transition-all duration-500 ease-in-out">
+									<p class="text-[var(--gray)] text-[16px] md:text-[18px] leading-[1.6] pb-8 max-w-[650px]">Yes, a professional chauffeur service is available upon request. Please let us know at the time of booking and we will provide you with available options and rates.</p>
+								</div>
+							</div>
+
+							<!-- FAQ Item 6 -->
+							<div class="faq-item border-b-[var(--border)] border-b-[1px] overflow-hidden transition-all duration-500 cursor-pointer">
+								<button class="faq-btn w-full flex justify-between items-center w-[calc(100%_-_30px)]  py-7 text-left group cursor-pointer lg:py-8">
+									<span class="text-white text-[18px] font-medium leading-[1.2] w-[calc(100%_-_30px)] pr-8 transition-colors group-hover:text-[var(--light-text)]">What happens if I return the car late?</span>
+									<div class="faq-icon-wrapper relative w-[22px] h-[22px] flex items-center justify-center">
+										<span class="faq-icon-x absolute w-full h-[2px] bg-white rounded-full transition-transform duration-300"></span>
+										<span class="faq-icon-v absolute w-[2px] h-full bg-white rounded-full transition-transform duration-300"></span>
+									</div>
+								</button>
+								<div class="faq-panel max-h-0 opacity-0 transition-all duration-500 ease-in-out">
+									<p class="text-[var(--gray)] text-[16px] md:text-[18px] leading-[1.6] pb-8 max-w-[650px]">In case of a late return, additional fees will apply according to our hourly or daily rate. If you anticipate a delay, please contact us as soon as possible so we can arrange an extension.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============================== FAQ Section End ============================== -->
+
+		<!-- ============================== Footer Section End ============================== -->
+
+		<footer class="p-[30px_20px_20px] sm:p-[100px_20px_20px] lg:p-[150px_20px_20px] xl:p-[100px_40px_40px]">
+			<div class="container">
+				<div class="bg-[var(--dark-bg)] p-[30px] rounded-[30px]">
+					<div class="flex justify-between items-center mb-[45px] lg:mb-[70px]">
+						<div class="flex-1">
+							<a href="index.html" class="flex items-center gap-2 w-fit">
+								<img src="assets/images/logo.svg" alt="Luxerra" class="w-6 h-6 select-none">
+								<span class="text-white text-base font-medium tracking-[-.01em]">Luxerra</span>
+							</a>
+						</div>
+						<div class="flex items-center gap-5 flex-1 justify-end">
+							<div class="flex items-center gap-[14px]">
+								<a href="#">
+									<img src="assets/images/instagram.svg" alt="Instagram" class="w-[16px] h-[16px] opacity-[0.8] duration-300 ease-out
+									hover:opacity-[1]">
+								</a>
+								<a href="#">
+									<img src="assets/images/whatsapp.svg" alt="Whatsapp" class="w-[16px] h-[16px] opacity-[0.8] duration-300 ease-out
+									hover:opacity-[1]">
+								</a>
+								<a href="#">
+									<img src="assets/images/phone.svg" alt="Phone" class="w-[16px] h-[16px] opacity-[0.8] duration-300 ease-out
+									hover:opacity-[1]">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-wrap lg:flex-nowrap">
+						<div class="lg:flex-[1] w-full">
+							<p class="text-[var(--gray)] text-[14px] leading-[1.2] mb-[10px]">Office Address (08 AM — 10 PM)</p>
+							<a href="#" class="font-medium text-white text-[18px] mb-[30px] block w-fit">8500 Sunset Blvd, Suite 210, <br>Los Angeles, CA 90069, USA</a>
+
+							<p class="text-[var(--gray)] text-[14px] leading-[1.2] mb-[10px]">Phone</p>
+							<a href="#" class="font-medium text-white text-[18px] mb-[30px] block w-fit">+1 (323) 555-7842</a>
+
+							<p class="text-[var(--gray)] text-[14px] leading-[1.2] mb-[10px]">Email</p>
+							<a href="#" class="font-medium text-white text-[18px] mb-[30px] block w-fit">info@luxerra.com</a>
+						</div>
+						<div class="lg:flex-[1] lg:w-fit w-full grid gap-[15px] grid-cols-[repeat(2,_1fr))] lg:m-[0] m-[10px_0_40px]">
+							<div class="">
+								<p class="text-[var(--gray)] text-[14px] leading-[1.2] mb-[10px]">Company</p>
+								<ul>
+									<li>
+										<a href="cars.html" class="relative inline-block text-base font-normal leading-[30px] text-[var(--light-text)] duration-300 ease-out pb-1
+													hover:text-white
+													after:content-[''] after:absolute after:left-0 after:bottom-[3px] after:h-[1px] after:w-full after:bg-white after:scale-x-0 after:origin-right after:transition-transform after:duration-300
+													hover:after:scale-x-100 hover:after:origin-left">
+											Cars
+										</a>
+									</li>
+									<li>
+										<a href="index.html#rental-terms" class="relative inline-block text-base font-normal leading-[30px] text-[var(--light-text)] duration-300 ease-out pb-1
+													hover:text-white
+													after:content-[''] after:absolute after:left-0 after:bottom-[3px] after:h-[1px] after:w-full after:bg-white after:scale-x-0 after:origin-right after:transition-transform after:duration-300
+													hover:after:scale-x-100 hover:after:origin-left">
+											Rental Terms
+										</a>
+									</li>
+									<li>
+										<a href="index.html#how-to-rent" class="relative inline-block text-base font-normal leading-[30px] text-[var(--light-text)] duration-300 ease-out pb-1
+													hover:text-white
+													after:content-[''] after:absolute after:left-0 after:bottom-[3px] after:h-[1px] after:w-full after:bg-white after:scale-x-0 after:origin-right after:transition-transform after:duration-300
+													hover:after:scale-x-100 hover:after:origin-left">
+											How To Rent
+										</a>
+									</li>
+									<li>
+										<a href="index.html#testimonials" class="relative inline-block text-base font-normal leading-[30px] text-[var(--light-text)] duration-300 ease-out pb-1
+													hover:text-white
+													after:content-[''] after:absolute after:left-0 after:bottom-[3px] after:h-[1px] after:w-full after:bg-white after:scale-x-0 after:origin-right after:transition-transform after:duration-300
+													hover:after:scale-x-100 hover:after:origin-left">
+											Testimonials
+										</a>
+									</li>
+									<li>
+										<a href="news.html" class="relative inline-block text-base font-normal leading-[30px] text-[var(--light-text)] duration-300 ease-out pb-1
+													hover:text-white
+													after:content-[''] after:absolute after:left-0 after:bottom-[3px] after:h-[1px] after:w-full after:bg-white after:scale-x-0 after:origin-right after:transition-transform after:duration-300
+													hover:after:scale-x-100 hover:after:origin-left">
+											News
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="">
+								<p class="text-[var(--gray)] text-[14px] leading-[1.2] mb-[10px]">Help</p>
+								<ul>
+									<li>
+										<a href="booking.html" class="relative inline-block text-base font-normal leading-[30px] text-[var(--light-text)] duration-300 ease-out pb-1
+													hover:text-white
+													after:content-[''] after:absolute after:left-0 after:bottom-[3px] after:h-[1px] after:w-full after:bg-white after:scale-x-0 after:origin-right after:transition-transform after:duration-300
+													hover:after:scale-x-100 hover:after:origin-left">
+											Book a Car
+										</a>
+									</li>
+									<li>
+										<a href="index.html#faq" class="relative inline-block text-base font-normal leading-[30px] text-[var(--light-text)] duration-300 ease-out pb-1
+													hover:text-white
+													after:content-[''] after:absolute after:left-0 after:bottom-[3px] after:h-[1px] after:w-full after:bg-white after:scale-x-0 after:origin-right after:transition-transform after:duration-300
+													hover:after:scale-x-100 hover:after:origin-left">
+											FAQ
+										</a>
+									</li>
+									<li>
+										<a href="privacy-policy.html" class="relative inline-block text-base font-normal leading-[30px] text-[var(--light-text)] duration-300 ease-out pb-1
+													hover:text-white
+													after:content-[''] after:absolute after:left-0 after:bottom-[3px] after:h-[1px] after:w-full after:bg-white after:scale-x-0 after:origin-right after:transition-transform after:duration-300
+													hover:after:scale-x-100 hover:after:origin-left">
+											Privacy Policy
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="lg:w-fit w-full max-w-[300px]">
+							<p class="text-white text-[14px] leading-[1.2] mb-[20px] font-medium">Join our mailing list and never miss an update!</p>
+							<div class="bg-[var(--email-bg)] rounded-[50px] border border-transparent focus-within:border-[#2a2a2a] w-fit items-center justify-between sm:p-[0] p-[5px_0] sm:block flex">
+								<input type="text" placeholder="Your Email" class="sm:p-[18px_25px] p-[15px_25px] text-[14px] text-white focus:outline-none bg-transparent font-features-['none'] w-[69.3%]" />
+								<button type="submit" class="bg-white text-[#080808] text-[14px] sm:p-[14px_20px] sm:h-fit h-fit p-[15px_20px] mr-[5px]  rounded-[30px] cursor-pointer">Submit</button>
+							</div>
+							<p class="text-[var(--gray)] text-[13px] leading-[1.7] m-[20px_0_0] font-features-['none']">By subscribing to our newsletter, you agree to receive <br>emails from us and accept our <a href="#" class="font-medium text-white font-features-['none']">Privacy Policy.</a></p>
+						</div>
+					</div>
+					<p class="text-[var(--gray)] text-[13px] leading-[1.2] lg:mt-[30px] mt-[45px] font-features-['none']">© 2026 Luxerra. All Rights Reserved</p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- ============================== Footer Section ============================== -->
+
+	</main>
+
+	<script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		// --- Mobile Navbar Toggle ---
+		const hamburgerBtn = document.getElementById('hamburger-btn');
+		const mobileNavbarPill = document.getElementById('mobile-navbar-pill');
+		const dropdownContent = mobileNavbarPill.querySelector('.grid');
+		const hamburgerLine1 = document.querySelector('.hamburger-line-1');
+		const hamburgerLine2 = document.querySelector('.hamburger-line-2');
+
+		function openNavbar() {
+			dropdownContent.classList.remove('grid-rows-[0fr]');
+			dropdownContent.classList.add('grid-rows-[1fr]');
+			hamburgerLine1.classList.remove('-translate-y-[3.5px]');
+			hamburgerLine1.classList.add('rotate-45');
+			hamburgerLine2.classList.remove('translate-y-[3.5px]');
+			hamburgerLine2.classList.add('-rotate-45');
+			mobileNavbarPill.style.backgroundColor = '#171717';
+			mobileNavbarPill.style.borderColor = '#171717';
+		}
+
+		function closeNavbar() {
+			dropdownContent.classList.add('grid-rows-[0fr]');
+			dropdownContent.classList.remove('grid-rows-[1fr]');
+			hamburgerLine1.classList.remove('rotate-45');
+			hamburgerLine1.classList.add('-translate-y-[3.5px]');
+			hamburgerLine2.classList.remove('-rotate-45');
+			hamburgerLine2.classList.add('translate-y-[3.5px]');
+			mobileNavbarPill.style.backgroundColor = '';
+			mobileNavbarPill.style.borderColor = '';
+		}
+
+		hamburgerBtn.addEventListener('click', () => {
+			const isOpening = dropdownContent.classList.contains('grid-rows-[0fr]');
+			if (isOpening) {
+				openNavbar();
+			} else {
+				closeNavbar();
+			}
+		});
+
+		// Close menu when clicking a link
+		document.querySelectorAll('.mobile-link').forEach(link => {
+			link.addEventListener('click', () => closeNavbar());
+		});
+	</script>
+	<script>
+		// --- Page Transition Logic ---
+		document.addEventListener("DOMContentLoaded", () => {
+			const pageContent = document.getElementById("page-content");
+			
+			// Create the overlay element dynamically
+			const overlay = document.createElement("div");
+			overlay.className = "transition-overlay";
+			document.body.appendChild(overlay);
+
+			// Check if this page load was from an internal transition
+			const isInternalNavigation = sessionStorage.getItem('isInternalNavigation');
+			sessionStorage.removeItem('isInternalNavigation');
+
+			if (pageContent) {
+				if (isInternalNavigation) {
+					window.scrollTo(0, 0);
+					if (window.lenis) {
+						window.lenis.scrollTo(0, { immediate: true });
+					}
+					requestAnimationFrame(() => {
+						pageContent.classList.add("page-transition-enter");
+						overlay.classList.add("is-entering");
+					});
+
+					// Scroll to hash section with 100px top offset after transition
+					const scrollToHash = sessionStorage.getItem('scrollToHash');
+					sessionStorage.removeItem('scrollToHash');
+					const targetEl = scrollToHash ? document.querySelector(scrollToHash) : null;
+					if (targetEl) {
+						setTimeout(() => {
+							const offset = 100;
+							if (window.lenis) {
+								window.lenis.scrollTo(targetEl, { offset: -offset, duration: 1.2 });
+							} else {
+								const y = targetEl.getBoundingClientRect().top + window.scrollY - offset;
+								window.scrollTo({ top: y, behavior: 'smooth' });
+							}
+						}, 700);
+					}
+				} else {
+					pageContent.style.opacity = 1;
+
+					// Handle direct URL hash on first load (e.g. index.html#rental-terms from browser)
+					if (window.location.hash) {
+						const targetEl = document.querySelector(window.location.hash);
+						if (targetEl) {
+							setTimeout(() => {
+								const offset = 100;
+								const y = targetEl.getBoundingClientRect().top + window.scrollY - offset;
+								if (window.lenis) {
+									window.lenis.scrollTo(y, { duration: 1.2 });
+								} else {
+									window.scrollTo({ top: y, behavior: 'smooth' });
+								}
+							}, 100);
+						}
+					}
+				}
+			}
+
+			// Handle same-page hash links with 100px offset
+			document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+				anchor.addEventListener('click', function (e) {
+					const hash = this.getAttribute('href');
+					if (!hash || hash === '#') return;
+					const targetEl = document.querySelector(hash);
+					if (!targetEl) return;
+					e.preventDefault();
+					const offset = 100;
+					const y = targetEl.getBoundingClientRect().top + window.scrollY - offset;
+					if (window.lenis) {
+						window.lenis.scrollTo(y, { duration: 1.2 });
+					} else {
+						window.scrollTo({ top: y, behavior: 'smooth' });
+					}
+				});
+			});
+
+			// Intercept clicks on local links
+			document.querySelectorAll('a').forEach(anchor => {
+				anchor.addEventListener('click', function (e) {
+					const targetUrl = this.getAttribute('href');
+					const isTargetBlank = this.getAttribute('target') === '_blank';
+					const isHashLink = targetUrl && targetUrl.startsWith('#');
+					const isExternal = this.host !== window.location.host;
+
+					if (!targetUrl || isTargetBlank || isHashLink || isExternal || targetUrl.startsWith('javascript:') || targetUrl.startsWith('mailto:') || targetUrl.startsWith('tel:')) return;
+
+					e.preventDefault();
+					const destination = this.href;
+
+					if (pageContent) {
+						pageContent.classList.remove("page-transition-enter");
+						pageContent.classList.add("page-transition-exit");
+					}
+					overlay.classList.remove("is-entering");
+					overlay.classList.add("is-exiting");
+
+					sessionStorage.setItem('isInternalNavigation', 'true');
+
+					setTimeout(() => {
+						window.location.href = destination;
+					}, 600); 
+				});
+			});
+		});
+	</script>
+
+	<script>
+		// Initialize Lenis
+		window.lenis = new Lenis({
+			autoRaf: true,
+		});
+
+		// Initialize AOS
+		AOS.init({
+			duration: 800,
+			once: true,
+			offset: 100
+		});
+	</script>
+
+	<script>
+		// --- FAQ Accordion ---
+		document.querySelectorAll('.faq-btn').forEach(btn => {
+			btn.addEventListener('click', () => {
+				const item = btn.parentElement;
+				const panel = item.querySelector('.faq-panel');
+				const iconV = item.querySelector('.faq-icon-v');
+				const iconX = item.querySelector('.faq-icon-x');
+				const isOpen = item.classList.contains('is-open');
+
+				// Close all other items
+				document.querySelectorAll('.faq-item').forEach(otherItem => {
+					if (otherItem !== item) {
+						otherItem.classList.remove('is-open');
+						otherItem.querySelector('.faq-panel').style.maxHeight = null;
+						otherItem.querySelector('.faq-panel').style.opacity = '0';
+						otherItem.querySelector('.faq-icon-v').style.transform = 'rotate(0deg)';
+						otherItem.querySelector('.faq-icon-x').style.transform = 'rotate(0deg)';
+					}
+				});
+
+				// Toggle current item
+				if (isOpen) {
+					item.classList.remove('is-open');
+					panel.style.maxHeight = null;
+					panel.style.opacity = '0';
+					iconV.style.transform = 'rotate(0deg)';
+					iconX.style.transform = 'rotate(0deg)';
+				} else {
+					item.classList.add('is-open');
+					panel.style.maxHeight = panel.scrollHeight + "px";
+					panel.style.opacity = '1';
+					iconV.style.transform = 'rotate(45deg)';
+					iconX.style.transform = 'rotate(45deg)';
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>

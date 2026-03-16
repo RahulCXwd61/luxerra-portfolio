@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Our Luxury & Exotic Car Collection</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carouse
+	l/1.9.0/slick.min.css"
+		integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+		integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+		integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+
+	<!-- ============================== Header Section ============================== -->
+
+	<header
+		class="lg:pt-[20px] lg:px-[20px] xl:px-[40px] lg:pb-[15px] p-[20px] fixed left-0 right-0 top-0 m-auto z-[11111111]">
+		<!-- Desktop Header Layout (lg+) -->
+		<div
+			class="absolute left-0 right-0 h-[125px] z-[-1] w-full top-0 brightness-[0.85] bg-[linear-gradient(to_bottom,rgba(8,8,8,1)_0%,rgba(8,8,8,0.95)_3%,rgba(8,8,8,0.88)_6%,rgba(8,8,8,0.79)_9%,rgba(8,8,8,0.69)_12%,rgba(8,8,8,0.59)_15%,rgba(8,8,8,0.49)_18%,rgba(8,8,8,0.39)_21%,rgba(8,8,8,0.31)_24%,rgba(8,8,8,0.24)_27%,rgba(8,8,8,0.18)_30%,rgba(8,8,8,0.13)_34%,rgba(8,8,8,0.09)_38%,rgba(8,8,8,0.06)_43%,rgba(8,8,8,0.04)_48%,rgba(8,8,8,0.02)_54%,rgba(8,8,8,0.01)_60%,rgba(8,8,8,0.005)_70%,rgba(8,8,8,0.002)_80%,rgba(8,8,8,0.001)_90%,rgba(8,8,8,0)_100%)]">
+		</div>
+		<div class="container mx-auto hidden lg:block">
+			<div class="flex justify-between items-center">
+				<div class="flex-1">
+					<a href="index.html" class="flex items-center gap-2 w-fit">
+						<img src="assets/images/logo.svg" alt="Luxerra" class="w-6 h-6">
+						<span class="text-white text-base font-medium tracking-[-.01em]">Luxerra</span>
+					</a>
+				</div>
+
+				<!-- Desktop Navigation -->
+				<ul class="flex items-center gap-[50px]">
+					<li>
+						<a href="cars.html" class="relative inline-block text-base font-normal leading-[25px] text-[var(--light-text)] duration-300 ease-out pb-1
+									hover:text-white
+									after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-full after:bg-white after:scale-x-0 after:origin-right after:transition-transform after:duration-300
+									hover:after:scale-x-100 hover:after:origin-left">
+							Cars
+						</a>
+					</li>
+					<li>
+						<a href="index.html#rental-terms" class="relative inline-block text-base font-normal leading-[25px] text-[var(--light-text)] duration-300 ease-out pb-1
+									hover:text-white
+									after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-full after:bg-white after:scale-x-0 after:origin-right after:transition-transform after:duration-300
+									hover:after:scale-x-100 hover:after:origin-left">
+							Rental Terms
+						</a>
+					</li>
+					<li>
+						<a href="News.html" class="relative inline-block text-base font-normal leading-[25px] text-[var(--light-text)] duration-300 ease-out pb-1
+									hover:text-white
+									after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-full after:bg-white after:scale-x-0 after:origin-right after:transition-transform after:duration-300
+									hover:after:scale-x-100 hover:after:origin-left">
+							News
+						</a>
+					</li>
+				</ul>
+
+				<div class="flex items-center gap-5 flex-1 justify-end">
+					<!-- Social Icons (Desktop Only) -->
+					<div class="flex items-center gap-[14px]">
+						<a href="#">
+							<img src="assets/images/instagram.svg" alt="Instagram" class="w-[16px] h-[16px] opacity-[0.7] duration-300 ease-out
+							hover:opacity-[1]">
+						</a>
+						<a href="#">
+							<img src="assets/images/whatsapp.svg" alt="Whatsapp" class="w-[16px] h-[16px] opacity-[0.7] duration-300 ease-out
+							hover:opacity-[1]">
+						</a>
+						<a href="#">
+							<img src="assets/images/phone.svg" alt="Phone" class="w-[16px] h-[16px] opacity-[0.7] duration-300 ease-out
+							hover:opacity-[1]">
+						</a>
+					</div>
+
+					<!-- Book Now Button -->
+					<div
+						class="bg-white pt-[10px] pb-[10px] px-[15px] md:px-[20px] rounded-[50px] duration-300 ease-out overflow-hidden h-[45px] md:h-[49px] w-fit min-w-[90px] md:min-w-[101px] z-10 relative group">
+						<a href="booking.html" class="text-[13px] md:text-[14px] font-normal md:leading-[30px] text-[#080808] block absolute left-0 right-0 top-0 bottom-0 m-auto flex items-center justify-center transition-all duration-300 text-center
+									group-hover:-translate-y-8">
+							Book Now
+						</a>
+						<a href="booking.html" class="text-[13px] md:text-[14px] font-normal md:leading-[30px] text-[#080808] block absolute left-0 right-0 top-0 bottom-0 m-auto flex items-center justify-center translate-y-8 transition-all duration-300 text-center
+									group-hover:translate-y-0">
+							Book Now
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Mobile Navbar Pill (< 1024px) -->
+		<div id="mobile-navbar-pill"
+			class="lg:hidden bg-[var(--dark-bg)] rounded-[32px] border border-[#1a1a1a] shadow-2xl overflow-hidden transition-all duration-500 ease-in-out">
+			<!-- Top Bar -->
+			<div class="flex justify-between items-center p-[10px_20px] transition-all duration-500 ease-in-out">
+				<a href="index.html" class="flex items-center gap-2">
+					<img src="assets/images/logo.svg" alt="Luxerra" class="w-6 h-6">
+					<span class="text-white text-base font-medium tracking-[-.01em]">Luxerra</span>
+				</a>
+				<!-- Toggle Button -->
+				<button id="hamburger-btn"
+					class="flex flex-col gap-[2px] p-[10px_0] cursor-pointer z-[11112] focus:outline-none w-[20px] h-[40px] items-center justify-center relative">
+					<span
+						class="hamburger-line hamburger-line-1 w-full h-[2px] bg-white rounded-full absolute transition-all duration-300 transform -translate-y-[3.5px]"></span>
+					<span
+						class="hamburger-line hamburger-line-2 w-full h-[2px] bg-white rounded-full absolute transition-all duration-300 transform translate-y-[3.5px]"></span>
+				</button>
+			</div>
+
+			<!-- Dropdown Content -->
+			<div class="grid grid-rows-[0fr] transition-all duration-500 ease-in-out">
+				<div class="overflow-hidden">
+					<div class="p-[10px_20px_20px]">
+						<ul class="flex flex-col gap-[20px] mb-7">
+							<li><a href="cars.html"
+									class="text-[#cacaca] text-[16px] transition-colors hover:text-[var(--light-text)] block">Cars</a>
+							</li>
+							<li><a href="#rental-terms"
+									class="text-[#cacaca] text-[16px] mobile-link transition-colors hover:text-[var(--light-text)] block">Rental
+									Terms</a></li>
+							<li><a href="news.html"
+									class="text-[#cacaca] text-[16px] transition-colors hover:text-[var(--light-text)] block">News</a>
+							</li>
+						</ul>
+
+						<div class="flex items-center gap-5 flex-1">
+							<div
+								class="bg-white pt-[10px] pb-[10px] px-[15px] md:px-[20px] rounded-[50px] duration-300 ease-out overflow-hidden h-[45px] md:h-[49px] w-fit min-w-[90px] md:min-w-[101px] z-10 relative group">
+								<a href="booking.html" class="text-[13px] md:text-[14px] font-normal md:leading-[30px] text-[#080808] block absolute left-0 right-0 top-0 bottom-0 m-auto flex items-center justify-center transition-all duration-300 text-center
+											group-hover:-translate-y-8">
+									Book Now
+								</a>
+								<a href="booking.html" class="text-[13px] md:text-[14px] font-normal md:leading-[30px] text-[#080808] block absolute left-0 right-0 top-0 bottom-0 m-auto flex items-center justify-center translate-y-8 transition-all duration-300 text-center
+											group-hover:translate-y-0">
+									Book Now
+								</a>
+							</div>
+							<div class="flex items-center">
+								<div class="flex items-center gap-[20px]">
+									<a href="#">
+										<img src="assets/images/instagram.svg" alt="Instagram" class="w-[16px] h-[16px] opacity-[0.7] duration-300 ease-out
+										hover:opacity-[1]">
+									</a>
+									<a href="#">
+										<img src="assets/images/whatsapp.svg" alt="Whatsapp" class="w-[16px] h-[16px] opacity-[0.7] duration-300 ease-out
+										hover:opacity-[1]">
+									</a>
+									<a href="#">
+										<img src="assets/images/phone.svg" alt="Phone" class="w-[16px] h-[16px] opacity-[0.7] duration-300 ease-out
+										hover:opacity-[1]">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- ============================== Header Section End ============================== -->
+
+	<main id="page-content" class="page-transition-wrapper">
+
+		<!-- ============================== Choose Your Ride Section ============================== -->
+
+		<section class="p-[135px_20px_0px] md:p-[135px_40px_0px]">
+			<div class="container">
+				<h2 class="text-white lg:text-[68px] text-[46px] font-medium leading-[1] m-[20px_0_45px] tracking-[-.02em] text-center">Cars</h2>
+
+				<!-- Filter Bar Section -->
+				<div class="lg:flex grid sm:grid-cols-[repeat(2,_1fr))] grid-cols-[repeat(1,_1fr))] flex-wrap gap-[10px] lg:mb-[80px] mb-[40px] relative z-[50] justify-center">
+					<!-- Brand Filter -->
+					<div class="relative h-fit group/filter lg:w-fit w-[100%]">
+						<button id="btn-brand"
+							class="bg-[var(--dark-gray)] justify-between lg:w-fit w-[100%] text-white border-0 sm:p-[15px_22px] p-[15px_19px] lg:gap-[8px] gap-[4px] rounded-full text-[14px] flex items-center cursor-pointer transition-colors hover:bg-[#252525] focus:outline-none transition-all duration-300 font-features-['none']">
+							<span class="font-features-['none']">Brand</span>
+							<svg width="10" height="10" viewBox="0 0 12 8" fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								class="transition-transform duration-300 pointer-events-none transform">
+								<path d="M1 1.5L6 6.5L11 1.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+									stroke-linejoin="round"></path>
+							</svg>
+						</button>
+						<div id="dropdown-brand"
+							class="filter-dropdown absolute top-[calc(100%+4px)] left-0 bg-[#171717] backdrop-blur-md rounded-[20px] font-features-['none'] p-[17px] opacity-0 invisible translate-y-[-10px] transition-all duration-300 flex flex-col w-[200px] gap-[12px] z-[-1] shadow-2xl [&.show]:opacity-100 [&.show]:visible [&.show]:translate-y-0 [&.show]:z-[100]">
+							<label
+								class="checkbox-label flex items-center gap-[10px] text-[15px] text-white/80 cursor-pointer select-none hover:text-white transition-colors">
+								<input type="checkbox" value="Aston Martin" data-filter-type="brand" class="">
+								<span
+									class="checkmark relative h-[16px] w-[16px] bg-white border-[1px_solid_#fff] rounded-[4px] transition-[all_0.5s] flex items-center justify-center"></span>
+								<span class="transition-colors font-features-['none']">Aston Martin</span>
+							</label>
+							<label
+								class="checkbox-label flex items-center gap-[10px] text-[15px] text-white/80 cursor-pointer select-none hover:text-white transition-colors">
+								<input type="checkbox" value="Audi" data-filter-type="brand" class="">
+								<span
+									class="checkmark relative h-[16px] w-[16px] bg-white border-[1px_solid_#fff] rounded-[4px] transition-[all_0.5s] flex items-center justify-center"></span>
+								<span class="transition-colors font-features-['none']">Audi</span>
+							</label>
+							<label
+								class="checkbox-label flex items-center gap-[10px] text-[15px] text-white/80 cursor-pointer select-none hover:text-white transition-colors">
+								<input type="checkbox" value="Chevrolet" data-filter-type="brand" class="">
+								<span
+									class="checkmark relative h-[16px] w-[16px] bg-white border-[1px_solid_#fff] rounded-[4px] transition-[all_0.5s] flex items-center justify-center"></span>
+								<span class="transition-colors font-features-['none']">Chevrolet</span>
+							</label>
+							<label
+								class="checkbox-label flex items-center gap-[10px] text-[15px] text-white/80 cursor-pointer select-none hover:text-white transition-colors">
+								<input type="checkbox" value="Ferrari" data-filter-type="brand" class="">
+								<span
+									class="checkmark relative h-[16px] w-[16px] bg-white border-[1px_solid_#fff] rounded-[4px] transition-[all_0.5s] flex items-center justify-center"></span>
+								<span class="transition-colors font-features-['none']">Ferrari</span>
+							</label>
+							<label
+								class="checkbox-label flex items-center gap-[10px] text-[15px] text-white/80 cursor-pointer select-none hover:text-white transition-colors">
+								<input type="checkbox" value="Lamborghini" data-filter-type="brand" class="">
+								<span
+									class="checkmark relative h-[16px] w-[16px] bg-white border-[1px_solid_#fff] rounded-[4px] transition-[all_0.5s] flex items-center justify-center"></span>
+								<span class="transition-colors font-features-['none']">Lamborghini</span>
+							</label>
+							<label
+								class="checkbox-label flex items-center gap-[10px] text-[15px] text-white/80 cursor-pointer select-none hover:text-white transition-colors">
+								<input type="checkbox" value="McLaren" data-filter-type="brand" class="">
+								<span
+									class="checkmark relative h-[16px] w-[16px] bg-white border-[1px_solid_#fff] rounded-[4px] transition-[all_0.5s] flex items-center justify-center"></span>
+								<span class="transition-colors font-features-['none']">McLaren</span>
+							</label>
+							<label
+								class="checkbox-label flex items-center gap-[10px] text-[15px] text-white/80 cursor-pointer select-none hover:text-white transition-colors">
+								<input type="checkbox" value="Mercedes" data-filter-type="brand" class="">
+								<span
+									class="checkmark relative h-[16px] w-[16px] bg-white border-[1px_solid_#fff] rounded-[4px] transition-[all_0.5s] flex items-center justify-center"></span>
+								<span class="transition-colors font-features-['none']">Mercedes</span>
+							</label>
+							<label
+								class="checkbox-label flex items-center gap-[10px] text-[15px] text-white/80 cursor-pointer select-none hover:text-white transition-colors">
+								<input type="checkbox" value="Porsche" data-filter-type="brand" class="">
+								<span
+									class="checkmark relative h-[16px] w-[16px] bg-white border-[1px_solid_#fff] rounded-[4px] transition-[all_0.5s] flex items-center justify-center"></span>
+								<span class="transition-colors font-features-['none']">Porsche</span>
+							</label>
+						</div>
+					</div>
+
+					<!-- Car Type Filter -->
+					<div class="relative h-fit group/filter lg:w-fit w-[100%]">
+						<button id="btn-type"
+							class="bg-[var(--dark-gray)] justify-between lg:w-fit w-[100%] text-white border-0 sm:p-[15px_22px] p-[15px_19px] lg:gap-[8px] gap-[4px] rounded-full text-[14px] flex items-center cursor-pointer transition-colors hover:bg-[#252525] focus:outline-none transition-all duration-300 font-features-['none']">
+							<span class="font-features-['none']">Car Type</span>
+							<svg width="10" height="10" viewBox="0 0 12 8" fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								class="transition-transform duration-300 pointer-events-none transform">
+								<path d="M1 1.5L6 6.5L11 1.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+									stroke-linejoin="round"></path>
+							</svg>
+						</button>
+						<div id="dropdown-type"
+							class="filter-dropdown absolute top-[calc(100%+4px)] left-0 bg-[#171717] backdrop-blur-md rounded-[20px] font-features-['none'] p-[17px] opacity-0 invisible translate-y-[-10px] transition-all duration-300 flex flex-col w-[200px] gap-[12px] z-[-1] shadow-2xl [&.show]:opacity-100 [&.show]:visible [&.show]:translate-y-0 [&.show]:z-[100]">
+							<label
+								class="checkbox-label flex items-center gap-[10px] text-[15px] text-white/80 cursor-pointer select-none hover:text-white transition-colors">
+								<input type="checkbox" value="Luxury" data-filter-type="class" class="">
+								<span
+									class="checkmark relative h-[16px] w-[16px] bg-white border-[1px_solid_#fff] rounded-[4px] transition-[all_0.5s] flex items-center justify-center"></span>
+								<span class="transition-colors font-features-['none']">Luxury</span>
+							</label>
+							<label
+								class="checkbox-label flex items-center gap-[10px] text-[15px] text-white/80 cursor-pointer select-none hover:text-white transition-colors">
+								<input type="checkbox" value="Sport" data-filter-type="class" class="">
+								<span
+									class="checkmark relative h-[16px] w-[16px] bg-white border-[1px_solid_#fff] rounded-[4px] transition-[all_0.5s] flex items-center justify-center"></span>
+								<span class="transition-colors font-features-['none']">Sport</span>
+							</label>
+						</div>
+					</div>
+
+					<!-- Transmission Filter -->
+					<div class="relative h-fit group/filter lg:w-fit w-[100%]">
+						<button id="btn-trans"
+							class="bg-[var(--dark-gray)] justify-between lg:w-fit w-[100%] text-white border-0 sm:p-[15px_22px] p-[15px_19px] lg:gap-[8px] gap-[4px] rounded-full text-[14px] flex items-center cursor-pointer transition-colors hover:bg-[#252525] focus:outline-none transition-all duration-300 font-features-['none']">
+							<span class="font-features-['none']">Transmission</span>
+							<svg width="10" height="10" viewBox="0 0 12 8" fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								class="transition-transform duration-300 pointer-events-none transform">
+								<path d="M1 1.5L6 6.5L11 1.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+									stroke-linejoin="round"></path>
+							</svg>
+						</button>
+						<div id="dropdown-trans"
+							class="filter-dropdown absolute top-[calc(100%+4px)] left-0 bg-[#171717] backdrop-blur-md rounded-[20px] font-features-['none'] p-[17px] opacity-0 invisible translate-y-[-10px] transition-all duration-300 flex flex-col w-[200px] gap-[12px] z-[-1] shadow-2xl [&.show]:opacity-100 [&.show]:visible [&.show]:translate-y-0 [&.show]:z-[100]">
+							<label
+								class="checkbox-label flex items-center gap-[10px] text-[15px] text-white/80 cursor-pointer select-none hover:text-white transition-colors">
+								<input type="checkbox" value="Automatic" data-filter-type="transmission" class="">
+								<span
+									class="checkmark relative h-[16px] w-[16px] bg-white border-[1px_solid_#fff] rounded-[4px] transition-[all_0.5s] flex items-center justify-center"></span>
+								<span class="transition-colors font-features-['none']">Automatic</span>
+							</label>
+							<label
+								class="checkbox-label flex items-center gap-[10px] text-[15px] text-white/80 cursor-pointer select-none hover:text-white transition-colors">
+								<input type="checkbox" value="Manual" data-filter-type="transmission" class="">
+								<span
+									class="checkmark relative h-[16px] w-[16px] bg-white border-[1px_solid_#fff] rounded-[4px] transition-[all_0.5s] flex items-center justify-center"></span>
+								<span class="transition-colors font-features-['none']">Manual</span>
+							</label>
+						</div>
+					</div>
+
+					<!-- Sort Filter -->
+					<div class="relative h-fit group/filter lg:w-fit w-[100%]">
+						<button id="btn-sort"
+							class="bg-[var(--dark-gray)] justify-between lg:w-fit w-[100%] text-white border-0 sm:p-[15px_22px] p-[15px_19px] lg:gap-[8px] gap-[4px] rounded-full text-[14px] flex items-center cursor-pointer transition-colors hover:bg-[#252525] focus:outline-none transition-all duration-300 font-features-['none']">
+							<span class="font-features-['none']">Most Relevant</span>
+							<svg width="10" height="10" viewBox="0 0 12 8" fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								class="transition-transform duration-300 pointer-events-none transform">
+								<path d="M1 1.5L6 6.5L11 1.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+									stroke-linejoin="round"></path>
+							</svg>
+						</button>
+						<div id="dropdown-sort"
+							class="filter-dropdown absolute top-[calc(100%+4px)] left-0 bg-[#171717] backdrop-blur-md rounded-[20px] font-features-['none'] p-[17px] opacity-0 invisible translate-y-[-10px] transition-all duration-300 flex flex-col w-[200px] gap-[12px] z-[-1] shadow-2xl [&.show]:opacity-100 [&.show]:visible [&.show]:translate-y-0 [&.show]:z-[100]">
+							<div class="sort-option active-sort text-[15px] text-white/80 cursor-pointer transition-all font-features-['none']"
+								data-sort="relevant">Most Relevant</div>
+							<div class="sort-option text-[15px] text-white/80 cursor-pointer transition-all font-features-['none']"
+								data-sort="ascending">Price Ascending</div>
+							<div class="sort-option text-[15px] text-white/80 cursor-pointer transition-all font-features-['none']"
+								data-sort="descending">Price Descending</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="grid items-center gap-[20px] lg:gap-[15px] grid-cols-[repeat(1,_1fr))] lg:grid-cols-[repeat(2,_1fr))]"
+					id="cars-grid">
+					<div class="w-full car-card-container" data-brand="Porsche" data-class="Sport"
+						data-transmission="Automatic" data-price="Descending">
+						<a href="porsche-911-gt3-rs.html"
+							class="group rounded-[30px] overflow-hidden aspect-[1.33333] md:aspect-[1.51163] h-auto block relative">
+							<img src="assets/images/porsche-911-gt3-rs.avif" alt=""
+								class="w-full h-full object-cover duration-500 ease-out transition-transform group-hover:scale-[1.1]">
+							<div class="flex items-center gap-[5px] md:left-[20px] md:top-[20px] absolute left-[15px] top-[15px] select-none">
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									320 km/h</p>
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									3.2 sec</p>
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									520 hp</p>
+							</div>
+						</a>
+						<div class="flex justify-between p-[25px_10px]">
+							<div class="grid gap-[6px] lg:flex-1 flex-[1.5] lg:w-fit w-full">
+								<h3 class="text-[18px] text-white font-medium">Porsche 911 GT3 RS</h3>
+								<h4 class="text-[16px] text-[var(--light-gray)] font-normal">from $1,100/day</h4>
+							</div>
+							<div class="flex-auto justify-end lg:flex h-fit hidden">
+								<a href="porsche-911-gt3-rs.html"
+									class="flex items-center text-[16px] text-[var(--light-gray)] font-normal duration-500 ease-out group justify-end hover:text-white w-fit">
+									<span>Learn More</span>
+									<img src="assets/images/left-arrow.svg"
+										class="w-[24px] h-[24px] object-cover duration-500 ease-out
+								    filter
+								    group-hover:[filter:brightness(0)_saturate(100%)_invert(99%)_sepia(7%)_saturate(255%)_hue-rotate(162deg)_brightness(120%)_contrast(100%)]">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="w-full car-card-container" data-brand="Mercedes" data-class="Sport"
+						data-transmission="Automatic" data-price="Descending">
+						<a href="mercedes-amg-gt.html"
+							class="group rounded-[30px] overflow-hidden aspect-[1.33333] md:aspect-[1.51163]  h-auto block relative">
+							<img src="assets/images/mercedes-amg-gt.avif" alt=""
+								class="w-full h-full object-cover duration-500 ease-out transition-transform group-hover:scale-[1.1]">
+							<div class="flex items-center gap-[5px] md:left-[20px] md:top-[20px] absolute left-[15px] top-[15px] select-none">
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									318 km/h</p>
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									3.5 sec</p>
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									577 hp</p>
+							</div>
+						</a>
+						<div class="flex justify-between p-[25px_10px]">
+							<div class="grid gap-[6px] lg:flex-1 flex-[1.5] lg:w-fit w-full">
+								<h3 class="text-[18px] text-white font-medium">Mercedes-AMG GT</h3>
+								<h4 class="text-[16px] text-[var(--light-gray)] font-normal">from $800/day</h4>
+							</div>
+							<div class="flex-auto justify-end lg:flex h-fit hidden">
+								<a href="mercedes-amg-gt.html"
+									class="flex items-center text-[16px] text-[var(--light-gray)] font-normal duration-500 ease-out group justify-end hover:text-white w-fit">
+									<span>Learn More</span>
+									<img src="assets/images/left-arrow.svg"
+										class="w-[24px] h-[24px] object-cover duration-500 ease-out
+								    filter
+								    group-hover:[filter:brightness(0)_saturate(100%)_invert(99%)_sepia(7%)_saturate(255%)_hue-rotate(162deg)_brightness(120%)_contrast(100%)]">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="w-full car-card-container" data-brand="Audi" data-class="Sport"
+						data-transmission="Manual" data-price="Ascending">
+						<a href="audi-r8.html"
+							class="group rounded-[30px] overflow-hidden aspect-[1.33333] md:aspect-[1.51163]  h-auto block relative">
+							<img src="assets/images/audi-r8.avif" alt=""
+								class="w-full h-full object-cover duration-500 ease-out transition-transform group-hover:scale-[1.1]">
+							<div class="flex items-center gap-[5px] md:left-[20px] md:top-[20px] absolute left-[15px] top-[15px] select-none">
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									330 km/h</p>
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									3.4 sec</p>
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									562 hp</p>
+							</div>
+						</a>
+						<div class="flex justify-between p-[25px_10px]">
+							<div class="grid gap-[6px] lg:flex-1 flex-[1.5] lg:w-fit w-full">
+								<h3 class="text-[18px] text-white font-medium">Audi R8</h3>
+								<h4 class="text-[16px] text-[var(--light-gray)] font-normal">from $1,100/day</h4>
+							</div>
+							<div class="flex-auto justify-end lg:flex h-fit hidden">
+								<a href="audi-r8.html"
+									class="flex items-center text-[16px] text-[var(--light-gray)] font-normal duration-500 ease-out group justify-end hover:text-white w-fit">
+									<span>Learn More</span>
+									<img src="assets/images/left-arrow.svg"
+										class="w-[24px] h-[24px] object-cover duration-500 ease-out
+								    filter
+								    group-hover:[filter:brightness(0)_saturate(100%)_invert(99%)_sepia(7%)_saturate(255%)_hue-rotate(162deg)_brightness(120%)_contrast(100%)]">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="w-full car-card-container" data-brand="Aston Martin" data-class="Luxury"
+						data-transmission="Manual" data-price="Ascending">
+						<a href="aston-martin-vantage.html"
+							class="group rounded-[30px] overflow-hidden aspect-[1.33333] md:aspect-[1.51163]  h-auto block relative">
+							<img src="assets/images/aston-martin-vantage.avif" alt=""
+								class="w-full h-full object-cover duration-500 ease-out transition-transform group-hover:scale-[1.1]">
+							<div class="flex items-center gap-[5px] md:left-[20px] md:top-[20px] absolute left-[15px] top-[15px] select-none">
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									314 km/h</p>
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									3.6 sec</p>
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									503 hp</p>
+							</div>
+						</a>
+						<div class="flex justify-between p-[25px_10px]">
+							<div class="grid gap-[6px] lg:flex-1 flex-[1.5] lg:w-fit w-full">
+								<h3 class="text-[18px] text-white font-medium">Aston Martin Vantage</h3>
+								<h4 class="text-[16px] text-[var(--light-gray)] font-normal">from $800/day</h4>
+							</div>
+							<div class="flex-auto justify-end lg:flex h-fit hidden">
+								<a href="aston-martin-vantage.html"
+									class="flex items-center text-[16px] text-[var(--light-gray)] font-normal duration-500 ease-out group justify-end hover:text-white w-fit">
+									<span>Learn More</span>
+									<img src="assets/images/left-arrow.svg"
+										class="w-[24px] h-[24px] object-cover duration-500 ease-out
+								    filter
+								    group-hover:[filter:brightness(0)_saturate(100%)_invert(99%)_sepia(7%)_saturate(255%)_hue-rotate(162deg)_brightness(120%)_contrast(100%)]">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="w-full car-card-container" data-brand="McLaren" data-class="Luxury"
+						data-transmission="Manual" data-price="Descending">
+						<a href="mclaren-650S.html"
+							class="group rounded-[30px] overflow-hidden aspect-[1.33333] md:aspect-[1.51163] h-auto block relative">
+							<img src="assets/images/mclaren-650S.avif" alt=""
+								class="w-full h-full object-cover duration-500 ease-out transition-transform group-hover:scale-[1.1]">
+							<div class="flex items-center gap-[5px] md:left-[20px] md:top-[20px] absolute left-[15px] top-[15px] select-none">
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									333 km/h</p>
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									3 sec</p>
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									650 hp</p>
+							</div>
+						</a>
+						<div class="flex justify-between p-[25px_10px]">
+							<div class="grid gap-[6px] lg:flex-1 flex-[1.5] lg:w-fit w-full">
+								<h3 class="text-[18px] text-white font-medium">McLaren 650S</h3>
+								<h4 class="text-[16px] text-[var(--light-gray)] font-normal">from $1,100/day</h4>
+							</div>
+							<div class="flex-auto justify-end lg:flex h-fit hidden">
+								<a href="porsche-911-gt3-rs.html"
+									class="flex items-center text-[16px] text-[var(--light-gray)] font-normal duration-500 ease-out group justify-end hover:text-white w-fit">
+									<span>Learn More</span>
+									<img src="assets/images/left-arrow.svg"
+										class="w-[24px] h-[24px] object-cover duration-500 ease-out
+								    filter
+								    group-hover:[filter:brightness(0)_saturate(100%)_invert(99%)_sepia(7%)_saturate(255%)_hue-rotate(162deg)_brightness(120%)_contrast(100%)]">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="w-full car-card-container" data-brand="Lamborghini" data-class="Luxury"
+						data-transmission="Manual" data-price="Descending">
+						<a href="lamborghini-huracan.html"
+							class="group rounded-[30px] overflow-hidden aspect-[1.33333] md:aspect-[1.51163]  h-auto block relative">
+							<img src="assets/images/lamborghini-huracan.avif" alt=""
+								class="w-full h-full object-cover duration-500 ease-out transition-transform group-hover:scale-[1.1]">
+							<div class="flex items-center gap-[5px] md:left-[20px] md:top-[20px] absolute left-[15px] top-[15px] select-none">
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									325 km/h</p>
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									2.9 sec</p>
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									640 hp</p>
+							</div>
+						</a>
+						<div class="flex justify-between p-[25px_10px]">
+							<div class="grid gap-[6px] lg:flex-1 flex-[1.5] lg:w-fit w-full">
+								<h3 class="text-[18px] text-white font-medium">Lamborghini Huracán</h3>
+								<h4 class="text-[16px] text-[var(--light-gray)] font-normal">from $1,100/day</h4>
+							</div>
+							<div class="flex-auto justify-end lg:flex h-fit hidden">
+								<a href="mercedes-amg-gt.html"
+									class="flex items-center text-[16px] text-[var(--light-gray)] font-normal duration-500 ease-out group justify-end hover:text-white w-fit">
+									<span>Learn More</span>
+									<img src="assets/images/left-arrow.svg"
+										class="w-[24px] h-[24px] object-cover duration-500 ease-out
+								    filter
+								    group-hover:[filter:brightness(0)_saturate(100%)_invert(99%)_sepia(7%)_saturate(255%)_hue-rotate(162deg)_brightness(120%)_contrast(100%)]">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="w-full car-card-container" data-brand="Ferrari" data-class="Luxury"
+						data-transmission="Manual" data-price="Descending">
+						<a href="ferrari-488-gtb.html"
+							class="group rounded-[30px] overflow-hidden aspect-[1.33333] md:aspect-[1.51163]  h-auto block relative">
+							<img src="assets/images/ferrari-488-gtb.avif" alt=""
+								class="w-full h-full object-cover duration-500 ease-out transition-transform group-hover:scale-[1.1]">
+							<div class="flex items-center gap-[5px] md:left-[20px] md:top-[20px] absolute left-[15px] top-[15px] select-none">
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									330 km/h</p>
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									3 sec</p>
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									670 hp</p>
+							</div>
+						</a>
+						<div class="flex justify-between p-[25px_10px]">
+							<div class="grid gap-[6px] lg:flex-1 flex-[1.5] lg:w-fit w-full">
+								<h3 class="text-[18px] text-white font-medium">Ferrari 488 GTB</h3>
+								<h4 class="text-[16px] text-[var(--light-gray)] font-normal">from $1,100/day</h4>
+							</div>
+							<div class="flex-auto justify-end lg:flex h-fit hidden">
+								<a href="audi-r8.html"
+									class="flex items-center text-[16px] text-[var(--light-gray)] font-normal duration-500 ease-out group justify-end hover:text-white w-fit">
+									<span>Learn More</span>
+									<img src="assets/images/left-arrow.svg"
+										class="w-[24px] h-[24px] object-cover duration-500 ease-out
+								    filter
+								    group-hover:[filter:brightness(0)_saturate(100%)_invert(99%)_sepia(7%)_saturate(255%)_hue-rotate(162deg)_brightness(120%)_contrast(100%)]">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="w-full car-card-container" data-brand="Chevrolet" data-class="Sport"
+						data-transmission="Automatic" data-price="Ascending">
+						<a href="chevrolet-corvette.html"
+							class="group rounded-[30px] overflow-hidden aspect-[1.33333] md:aspect-[1.51163]  h-auto block relative">
+							<img src="assets/images/chevrolet-corvette.avif" alt=""
+								class="w-full h-full object-cover duration-500 ease-out transition-transform group-hover:scale-[1.1]">
+							<div class="flex items-center gap-[5px] md:left-[20px] md:top-[20px] absolute left-[15px] top-[15px] select-none">
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									296 km/h</p>
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									3.7 sec</p>
+								<p
+									class="bg-[var(--dark-gray)] rounded-4xl p-[8px_12px] flex gap-[10px] items-center w-fit text-white text-[14px]">
+									490 hp</p>
+							</div>
+						</a>
+						<div class="flex justify-between p-[25px_10px]">
+							<div class="grid gap-[6px] lg:flex-1 flex-[1.5] lg:w-fit w-full">
+								<h3 class="text-[18px] text-white font-medium">Chevrolet Corvette</h3>
+								<h4 class="text-[16px] text-[var(--light-gray)] font-normal">from $500/day</h4>
+							</div>
+							<div class="flex-auto justify-end lg:flex h-fit hidden">
+								<a href="aston-martin-vantage.html"
+									class="flex items-center text-[16px] text-[var(--light-gray)] font-normal duration-500 ease-out group justify-end hover:text-white w-fit">
+									<span>Learn More</span>
+									<img src="assets/images/left-arrow.svg"
+										class="w-[24px] h-[24px] object-cover duration-500 ease-out
+								    filter
+								    group-hover:[filter:brightness(0)_saturate(100%)_invert(99%)_sepia(7%)_saturate(255%)_hue-rotate(162deg)_brightness(120%)_contrast(100%)]">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Pagination Container -->
+				<div class="pagination-container" id="pagination-controls">
+					<!-- Pagination will be injected via JS -->
+				</div>
+
+			</div>
+		</section>
+
+		<!-- ============================== Choose Your Ride Section End ============================== -->
+
+		<!-- ============================== Footer Section End ============================== -->
+
+		<footer class="p-[30px_20px_20px] sm:p-[100px_20px_20px] lg:p-[150px_20px_20px] xl:p-[150px_40px_40px]">
+			<div class="container">
+				<div class="bg-[var(--dark-bg)] p-[30px] rounded-[30px]">
+					<div class="flex justify-between items-center mb-[45px] lg:mb-[70px]">
+						<div class="flex-1">
+							<a href="index.html" class="flex items-center gap-2 w-fit">
+								<img src="assets/images/logo.svg" alt="Luxerra" class="w-6 h-6 select-none">
+								<span class="text-white text-base font-medium tracking-[-.01em]">Luxerra</span>
+							</a>
+						</div>
+						<div class="flex items-center gap-5 flex-1 justify-end">
+							<div class="flex items-center gap-[14px]">
+								<a href="#">
+									<img src="assets/images/instagram.svg" alt="Instagram" class="w-[16px] h-[16px] opacity-[0.8] duration-300 ease-out
+									hover:opacity-[1]">
+								</a>
+								<a href="#">
+									<img src="assets/images/whatsapp.svg" alt="Whatsapp" class="w-[16px] h-[16px] opacity-[0.8] duration-300 ease-out
+									hover:opacity-[1]">
+								</a>
+								<a href="#">
+									<img src="assets/images/phone.svg" alt="Phone" class="w-[16px] h-[16px] opacity-[0.8] duration-300 ease-out
+									hover:opacity-[1]">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-wrap lg:flex-nowrap">
+						<div class="lg:flex-[1] w-full">
+							<p class="text-[var(--gray)] text-[14px] leading-[1.2] mb-[10px]">Office Address (08 AM — 10 PM)</p>
+							<a href="#" class="font-medium text-white text-[18px] mb-[30px] block w-fit">8500 Sunset Blvd, Suite 210, <br>Los Angeles, CA 90069, USA</a>
+
+							<p class="text-[var(--gray)] text-[14px] leading-[1.2] mb-[10px]">Phone</p>
+							<a href="#" class="font-medium text-white text-[18px] mb-[30px] block w-fit">+1 (323) 555-7842</a>
+
+							<p class="text-[var(--gray)] text-[14px] leading-[1.2] mb-[10px]">Email</p>
+							<a href="#" class="font-medium text-white text-[18px] mb-[30px] block w-fit">info@luxerra.com</a>
+						</div>
+						<div class="lg:flex-[1] lg:w-fit w-full grid gap-[15px] grid-cols-[repeat(2,_1fr))] lg:m-[0] m-[10px_0_40px]">
+							<div class="">
+								<p class="text-[var(--gray)] text-[14px] leading-[1.2] mb-[10px]">Company</p>
+								<ul>
+									<li>
+										<a href="cars.html" class="relative inline-block text-base font-normal leading-[30px] text-[var(--light-text)] duration-300 ease-out pb-1
+													hover:text-white
+													after:content-[''] after:absolute after:left-0 after:bottom-[3px] after:h-[1px] after:w-full after:bg-white after:scale-x-0 after:origin-right after:transition-transform after:duration-300
+													hover:after:scale-x-100 hover:after:origin-left">
+											Cars
+										</a>
+									</li>
+									<li>
+										<a href="index.html#rental-terms" class="relative inline-block text-base font-normal leading-[30px] text-[var(--light-text)] duration-300 ease-out pb-1
+													hover:text-white
+													after:content-[''] after:absolute after:left-0 after:bottom-[3px] after:h-[1px] after:w-full after:bg-white after:scale-x-0 after:origin-right after:transition-transform after:duration-300
+													hover:after:scale-x-100 hover:after:origin-left">
+											Rental Terms
+										</a>
+									</li>
+									<li>
+										<a href="index.html#how-to-rent" class="relative inline-block text-base font-normal leading-[30px] text-[var(--light-text)] duration-300 ease-out pb-1
+													hover:text-white
+													after:content-[''] after:absolute after:left-0 after:bottom-[3px] after:h-[1px] after:w-full after:bg-white after:scale-x-0 after:origin-right after:transition-transform after:duration-300
+													hover:after:scale-x-100 hover:after:origin-left">
+											How To Rent
+										</a>
+									</li>
+									<li>
+										<a href="index.html#testimonials" class="relative inline-block text-base font-normal leading-[30px] text-[var(--light-text)] duration-300 ease-out pb-1
+													hover:text-white
+													after:content-[''] after:absolute after:left-0 after:bottom-[3px] after:h-[1px] after:w-full after:bg-white after:scale-x-0 after:origin-right after:transition-transform after:duration-300
+													hover:after:scale-x-100 hover:after:origin-left">
+											Testimonials
+										</a>
+									</li>
+									<li>
+										<a href="news.html" class="relative inline-block text-base font-normal leading-[30px] text-[var(--light-text)] duration-300 ease-out pb-1
+													hover:text-white
+													after:content-[''] after:absolute after:left-0 after:bottom-[3px] after:h-[1px] after:w-full after:bg-white after:scale-x-0 after:origin-right after:transition-transform after:duration-300
+													hover:after:scale-x-100 hover:after:origin-left">
+											News
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="">
+								<p class="text-[var(--gray)] text-[14px] leading-[1.2] mb-[10px]">Help</p>
+								<ul>
+									<li>
+										<a href="booking.html" class="relative inline-block text-base font-normal leading-[30px] text-[var(--light-text)] duration-300 ease-out pb-1
+													hover:text-white
+													after:content-[''] after:absolute after:left-0 after:bottom-[3px] after:h-[1px] after:w-full after:bg-white after:scale-x-0 after:origin-right after:transition-transform after:duration-300
+													hover:after:scale-x-100 hover:after:origin-left">
+											Book a Car
+										</a>
+									</li>
+									<li>
+										<a href="index.html#faq" class="relative inline-block text-base font-normal leading-[30px] text-[var(--light-text)] duration-300 ease-out pb-1
+													hover:text-white
+													after:content-[''] after:absolute after:left-0 after:bottom-[3px] after:h-[1px] after:w-full after:bg-white after:scale-x-0 after:origin-right after:transition-transform after:duration-300
+													hover:after:scale-x-100 hover:after:origin-left">
+											FAQ
+										</a>
+									</li>
+									<li>
+										<a href="privacy-policy.html" class="relative inline-block text-base font-normal leading-[30px] text-[var(--light-text)] duration-300 ease-out pb-1
+													hover:text-white
+													after:content-[''] after:absolute after:left-0 after:bottom-[3px] after:h-[1px] after:w-full after:bg-white after:scale-x-0 after:origin-right after:transition-transform after:duration-300
+													hover:after:scale-x-100 hover:after:origin-left">
+											Privacy Policy
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="lg:w-fit w-full max-w-[300px]">
+							<p class="text-white text-[14px] leading-[1.2] mb-[20px] font-medium">Join our mailing list and never miss an update!</p>
+							<div class="bg-[var(--email-bg)] rounded-[50px] border border-transparent focus-within:border-[#2a2a2a] w-fit items-center justify-between sm:p-[0] p-[5px_0] sm:block flex">
+								<input type="text" placeholder="Your Email" class="sm:p-[18px_25px] p-[15px_25px] text-[14px] text-white focus:outline-none bg-transparent font-features-['none'] w-[69.3%]" />
+								<button type="submit" class="bg-white text-[#080808] text-[14px] sm:p-[14px_20px] sm:h-fit h-fit p-[15px_20px] mr-[5px]  rounded-[30px] cursor-pointer">Submit</button>
+							</div>
+							<p class="text-[var(--gray)] text-[13px] leading-[1.7] m-[20px_0_0] font-features-['none']">By subscribing to our newsletter, you agree to receive <br>emails from us and accept our <a href="#" class="font-medium text-white font-features-['none']">Privacy Policy.</a></p>
+						</div>
+					</div>
+					<p class="text-[var(--gray)] text-[13px] leading-[1.2] lg:mt-[30px] mt-[45px] font-features-['none']">© 2026 Luxerra. All Rights Reserved</p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- ============================== Footer Section ============================== -->
+
+	</main>
+
+	<script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		// --- Mobile Navbar Toggle ---
+		const hamburgerBtn = document.getElementById('hamburger-btn');
+		const mobileNavbarPill = document.getElementById('mobile-navbar-pill');
+		const dropdownContent = mobileNavbarPill.querySelector('.grid');
+		const hamburgerLine1 = document.querySelector('.hamburger-line-1');
+		const hamburgerLine2 = document.querySelector('.hamburger-line-2');
+
+		function openNavbar() {
+			dropdownContent.classList.remove('grid-rows-[0fr]');
+			dropdownContent.classList.add('grid-rows-[1fr]');
+			hamburgerLine1.classList.remove('-translate-y-[3.5px]');
+			hamburgerLine1.classList.add('rotate-45');
+			hamburgerLine2.classList.remove('translate-y-[3.5px]');
+			hamburgerLine2.classList.add('-rotate-45');
+			mobileNavbarPill.style.backgroundColor = '#171717';
+			mobileNavbarPill.style.borderColor = '#171717';
+		}
+
+		function closeNavbar() {
+			dropdownContent.classList.add('grid-rows-[0fr]');
+			dropdownContent.classList.remove('grid-rows-[1fr]');
+			hamburgerLine1.classList.remove('rotate-45');
+			hamburgerLine1.classList.add('-translate-y-[3.5px]');
+			hamburgerLine2.classList.remove('-rotate-45');
+			hamburgerLine2.classList.add('translate-y-[3.5px]');
+			mobileNavbarPill.style.backgroundColor = '';
+			mobileNavbarPill.style.borderColor = '';
+		}
+
+		hamburgerBtn.addEventListener('click', () => {
+			const isOpening = dropdownContent.classList.contains('grid-rows-[0fr]');
+			if (isOpening) {
+				openNavbar();
+			} else {
+				closeNavbar();
+			}
+		});
+
+		// Close menu when clicking a link
+		document.querySelectorAll('.mobile-link').forEach(link => {
+			link.addEventListener('click', () => closeNavbar());
+		});
+	</script>
+	<script>
+		// Initialize Lenis
+		window.lenis = new Lenis({
+			autoRaf: true,
+		});
+
+		// Initialize AOS
+		AOS.init({
+			duration: 800,
+			once: true,
+			offset: 100
+		});
+
+		// --- Filtering and Sorting Logic ---
+		document.addEventListener("DOMContentLoaded", () => {
+			const carsGrid = document.getElementById('cars-grid');
+			const allCars = Array.from(carsGrid.querySelectorAll('.car-card-container'));
+			let filteredCars = [...allCars];
+
+			const carsPerPage = 6;
+			let currentPage = 1;
+
+			// ---------------- Dropdown Toggle ----------------
+			const filterBtns = document.querySelectorAll('#btn-brand, #btn-type, #btn-trans, #btn-sort');
+			const filterDropdowns = document.querySelectorAll('.filter-dropdown');
+
+			const closeAllDropdowns = () => {
+				filterDropdowns.forEach(dropdown => dropdown.classList.remove('show'));
+				filterBtns.forEach(btn => {
+					btn.classList.remove('active');
+					const svg = btn.querySelector('svg');
+					if (svg) svg.classList.remove('rotate-180');
+				});
+			};
+
+			filterBtns.forEach(btn => {
+				btn.addEventListener('click', (e) => {
+					e.stopPropagation();
+					const isActive = btn.classList.contains('active');
+					closeAllDropdowns();
+
+					if (!isActive) {
+						btn.classList.add('active');
+						const svg = btn.querySelector('svg');
+						if (svg) svg.classList.add('rotate-180');
+
+						const targetDropdownId = btn.id.replace('btn-', 'dropdown-');
+						const dropdown = document.getElementById(targetDropdownId);
+
+						if (dropdown) dropdown.classList.add('show');
+					}
+				});
+			});
+
+			document.addEventListener('click', (e) => {
+				if (!e.target.closest('.filter-dropdown') && !e.target.closest('button[id^="btn-"]')) {
+					closeAllDropdowns();
+				}
+			});
+
+			filterDropdowns.forEach(dropdown => {
+				dropdown.addEventListener('click', (e) => {
+					e.stopPropagation();
+				});
+			});
+
+
+			// ---------------- Filtering ----------------
+			const checkboxes = document.querySelectorAll('.filter-dropdown input[type="checkbox"]');
+
+			const updateButtonLabels = (activeFilters) => {
+				const brandBtnText = document.querySelector('#btn-brand span');
+				const typeBtnText = document.querySelector('#btn-type span');
+				const transBtnText = document.querySelector('#btn-trans span');
+
+				brandBtnText.textContent =
+					activeFilters.brand.length === 0
+						? 'Brand'
+						: activeFilters.brand.length === 1
+							? activeFilters.brand[0]
+							: `${activeFilters.brand.length} Selected`;
+
+				typeBtnText.textContent =
+					activeFilters.class.length === 0
+						? 'Car Type'
+						: activeFilters.class.length === 1
+							? activeFilters.class[0]
+							: `${activeFilters.class.length} Selected`;
+
+				transBtnText.textContent =
+					activeFilters.transmission.length === 0
+						? 'Transmission'
+						: activeFilters.transmission.length === 1
+							? activeFilters.transmission[0]
+							: `${activeFilters.transmission.length} Selected`;
+			};
+
+			const applyFilters = () => {
+				const activeFilters = {
+					brand: [],
+					class: [],
+					transmission: []
+				};
+
+				checkboxes.forEach(cb => {
+					if (cb.checked) {
+						activeFilters[cb.dataset.filterType].push(cb.value);
+					}
+				});
+
+				updateButtonLabels(activeFilters);
+
+				filteredCars = allCars.filter(car => {
+					const brandMatch =
+						activeFilters.brand.length === 0 ||
+						activeFilters.brand.includes(car.dataset.brand);
+
+					const classMatch =
+						activeFilters.class.length === 0 ||
+						activeFilters.class.includes(car.dataset.class);
+
+					const transMatch =
+						activeFilters.transmission.length === 0 ||
+						activeFilters.transmission.includes(car.dataset.transmission);
+
+					return brandMatch && classMatch && transMatch;
+				});
+
+				currentPage = 1;
+				applySorting();
+			};
+
+			checkboxes.forEach(cb => {
+				cb.addEventListener('change', applyFilters);
+			});
+
+
+			// ---------------- Sorting ----------------
+			const sortOptions = document.querySelectorAll('.sort-option');
+			const sortBtnText = document.querySelector('#btn-sort span');
+
+			const applySorting = () => {
+				const activeSortOption = document.querySelector('.sort-option.active-sort');
+				const activeSort = activeSortOption.dataset.sort;
+
+				sortBtnText.textContent = activeSortOption.textContent;
+
+				if (activeSort === 'ascending' || activeSort === 'descending') {
+					filteredCars = [...filteredCars].sort((a, b) => {
+						const getPrice = car => {
+							const text = car.querySelector('h4') ? car.querySelector('h4').textContent : '0';
+							return parseFloat(text.replace(/[^0-9.]/g, '')) || 0;
+						};
+						return activeSort === 'ascending'
+							? getPrice(a) - getPrice(b)
+							: getPrice(b) - getPrice(a);
+					});
+				}
+
+				renderCars();
+			};
+
+			sortOptions.forEach(option => {
+				option.addEventListener('click', () => {
+					sortOptions.forEach(opt => opt.classList.remove('active-sort'));
+					option.classList.add('active-sort');
+
+					applySorting();
+					closeAllDropdowns();
+				});
+			});
+
+
+			// ---------------- Pagination + Rendering ----------------
+			const paginationContainer = document.getElementById('pagination-controls');
+
+			const renderCars = () => {
+				allCars.forEach(car => {
+					car.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
+					setTimeout(() => {
+						if (car.parentNode) car.parentNode.removeChild(car);
+					}, 300);
+				});
+
+				const startIndex = (currentPage - 1) * carsPerPage;
+				const endIndex = startIndex + carsPerPage;
+				const carsToShow = filteredCars.slice(startIndex, endIndex);
+
+				setTimeout(() => {
+					carsToShow.forEach(car => {
+						carsGrid.appendChild(car);
+						car.offsetHeight;
+						car.classList.remove('opacity-0', 'scale-95', 'pointer-events-none');
+					});
+					renderPaginationControls();
+				}, 305);
+			};
+
+
+			// -------- Pagination --------
+			const renderPaginationControls = () => {
+				paginationContainer.innerHTML = '';
+				const totalPages = Math.ceil(filteredCars.length / carsPerPage);
+				if (totalPages <= 1) return;
+
+				for (let i = 1; i <= totalPages; i++) {
+					const pageBtn = document.createElement('button');
+					pageBtn.className =
+						`p-[9px_17px] rounded-[15px] bg-[var(--dark-gray)] border-0 flex items-center justify-center text-[15px] transition-all ${i === currentPage
+							? 'bg-white text-black font-semibold'
+							: 'text-white border border-white/10 hover:bg-white/10'
+						}`;
+					pageBtn.textContent = i;
+					pageBtn.addEventListener('click', () => {
+						currentPage = i;
+						renderCars();
+						scrollToTop();
+					});
+					paginationContainer.appendChild(pageBtn);
+				}
+			};
+
+			const scrollToTop = () => {
+				const yOffset = -150;
+				const y = carsGrid.getBoundingClientRect().top + window.scrollY + yOffset;
+				window.scrollTo({
+					top: y,
+					behavior: 'smooth'
+				});
+			};
+
+			renderCars();
+		});
+	</script>
+
+</body>
+
+</html>
